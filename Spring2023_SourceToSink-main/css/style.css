@@ -1,0 +1,235 @@
+/*insert style here*/
+
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup {
+    background-image: linear-gradient(25deg, #045b8dad, #74a9cfb4, #74a9cfb4, #045b8dad), url('https://img.freepik.com/free-vector/topographic-contour-lines-map-seamless-pattern_1284-52862.jpg?w=826&t=st=1683657221~exp=1683657821~hmac=3af7503d1302ed544ee6a88dc611304ac08fed7bab3a60ea8dec2fa9962ce233');
+    width: 750px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: none;
+    z-index: 10000000;
+    color: #045b8d;
+    text-shadow: 0.75px 0.75px #ffffff;
+}
+
+#letsGo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+}
+
+#close {
+    color: white;
+}
+
+.popup button {
+    display: block;
+    margin: 0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #c5c5c5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+e {
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: #045a8d;
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+e:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px 1px rgb(255, 255, 255);
+    background-color: #74a9cf;
+    color: #045a8d;
+    text-shadow: .75px .75px #3f3f3fa4
+}
+
+#title-bar {
+    width: 100;
+    height: 80px;
+    background-image: linear-gradient(135deg, #bdc9e1c5, #74a9cfc7, #045b8dc5), url('https://i.pinimg.com/736x/09/7a/3e/097a3e9e79e846ac27e89e36a38ea80f.jpg');
+    border-radius: 15px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(231, 245, 245);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+#left-panel {
+    width: fit-content;
+    height: 400px;
+    background-image: linear-gradient(165deg, #bdc9e1, #74a9cf, #045a8d);
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px;
+    vertical-align: top;
+    text-align: left;
+    line-height: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    z-index: 10;
+}
+
+#map {
+    height: 88vh;
+    width: 73%;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 15px;
+    z-index: 1;
+    margin-top: 7px;
+}
+
+.huc10class {
+    fill: red;
+}
+
+.huc8class {
+    z-index: 20;
+}
+
+#search-form {
+    padding: 10px;
+}
+
+.info {
+    padding: 6px 15px;
+    font: 14px/16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: fit-content;
+    height: 170px;
+    bottom: 40px;
+    left: 35px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.info h6 {
+    font-size: 14pt;
+    color: #777;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.resetButton {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #045a8d;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    width: 750px;
+    height: 40px;
+}
+
+.resetButton:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px 1px rgb(255, 255, 255);
+    background-color: #74a9cf;
+    color: #045a8d;
+    text-shadow: .75px .75px #3f3f3fa4
+}
+
+a,
+a:active,
+a:visited {
+    color: #045a8d
+}
+
+a:hover {
+    color: #74a9cf;
+    text-shadow: .75px .75px #3f3f3fa4
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+    padding: 6px 15px;
+    font: 14px/16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    bottom: 40px;
+    left: 35px;
+    line-height: 1.5;
+
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+.rels {
+    padding: 6px 15px;
+    font: 14px/16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: white;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    bottom: 10px;
+    right: 60px;
+    color: #555;
+}
+
+#currentHuc {
+    font-size: large;
+    font-weight: bold;
+    color: #111
+}
